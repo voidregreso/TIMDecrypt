@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="zroot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.perez.tim_decryptsqlmsg.Controller">
+   <children>
+      <Label layoutX="115.0" layoutY="43.0" prefHeight="17.0" prefWidth="355.0" text="Please choose the database file copied from mobile tencent QQ:" />
+      <Button fx:id="chose_cliked" layoutX="838.0" layoutY="79.0" mnemonicParsing="false" onAction="#OpenFileDlg" prefHeight="46.0" prefWidth="43.0" text="..." />
+      <TextField fx:id="elegir" layoutX="115.0" layoutY="70.0" prefHeight="64.0" prefWidth="677.0" />
+      <TextArea fx:id="puertorico" layoutX="115.0" layoutY="185.0" prefHeight="37.0" prefWidth="716.0" />
+      <Label layoutX="115.0" layoutY="157.0" prefHeight="17.0" prefWidth="387.0" text="And type in your IMEI key obtained from com.tencent.mobileqq/files/kc:" />
+      <Button fx:id="accionar" layoutX="757.0" layoutY="522.0" mnemonicParsing="false" onAction="#Accionar" prefHeight="46.0" prefWidth="162.0" text="Decrypt FriendsList Now!" />
+      <TableView fx:id="tb" layoutX="39.0" layoutY="242.0" prefHeight="263.0" prefWidth="907.0">
+        <columns>
+          <TableColumn prefWidth="76.5" text="Age" />
+          <TableColumn prefWidth="158.0" text="Alias" />
+            <TableColumn prefWidth="93.5" text="Gender" />
+            <TableColumn prefWidth="221.0" text="Name" />
+            <TableColumn prefWidth="229.5" text="Remark" />
+            <TableColumn prefWidth="149.0" text="QQ Number" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
